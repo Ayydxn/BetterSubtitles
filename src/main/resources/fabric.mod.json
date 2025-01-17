@@ -8,19 +8,20 @@
 		"${author}"
 	],
 	"contact": {
-		"homepage": "https://github.com/Ayydxn/FabricModTemplate",
-		"sources": "https://github.com/Ayydxn/FabricModTemplate/issues"
+		"homepage": "https://github.com/Ayydxn/BetterSubtitles",
+		"sources": "https://github.com/Ayydxn/BetterSubtitles",
+		"issues": "https://github.com/Ayydxn/BetterSubtitles/issues"
 	},
 	"license": "${license}",
-	"icon": "assets/fabric-mod-template/${icon_file}",
-	"environment": "*",
+	"icon": "assets/better-subtitles/${icon_file}",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"com.ayydxn.fabricmodtemplate.FabricModTemplate"
+		"client": [
+			"com.ayydxn.bettersubtitles.BetterSubtitlesClientMod"
 		]
 	},
 	"mixins": [
-		"fabric-mod-template.mixins.json"
+		"better-subtitles.mixins.json"
 	],
 	"depends": {
 		"minecraft": "~${minecraft_version}",
