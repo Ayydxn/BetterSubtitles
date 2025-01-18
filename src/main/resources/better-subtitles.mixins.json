@@ -3,7 +3,9 @@
 	"package": "com.ayydxn.bettersubtitles.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-
+	],
+	"client": [
+		"client.SoundOptionsScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

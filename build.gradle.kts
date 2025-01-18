@@ -14,6 +14,14 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+
+    maven("https://api.modrinth.com/maven") {
+        name = "Modrinth"
+    }
+
+    maven("https://maven.quiltmc.org/repository/release") {
+        name = "Quilt"
+    }
 }
 
 dependencies {
@@ -24,6 +32,14 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation("net.fabricmc.fabric-api:fabric-api:${rootProject.property("fabric_api_version")}")
+
+    // YACL. Used for Better Subtitles' configuration GUI.
+    modImplementation("maven.modrinth:yacl:${rootProject.property("yacl_version")}")
+    include("maven.modrinth:yacl:${rootProject.property("yacl_version")}")
+
+    // Needed for YACL or else the game will crash complaining that it can't find classes from here.
+    runtimeOnly("org.quiltmc.parsers:gson:0.3.1")
+    include("org.quiltmc.parsers:gson:0.3.1")
 }
 
 tasks {
