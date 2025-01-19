@@ -1,6 +1,9 @@
 {
   "better-subtitles.options.gui_title": "Better Subtitles Options",
 
+  "key.category.better-subtitles.debug": "Better Subtitles - Debug",
+  "key.better-subtitles.display_test_subtitle": "Display Test Subtitle",
+
   "better-subtitles.options.category.better_subtitles": "Better Subtitles",
   "better-subtitles.options.group.miscellaneous": "Miscellaneous",
   "better-subtitles.options.miscellaneous.enable_legacy_subtitles": "Enable Legacy Subtitles",
