@@ -39,7 +39,7 @@ public class BetterSubtitlesKeyBinds
         ClientTickEvents.END_CLIENT_TICK.register(client ->
         {
             if (DISPLAY_TEST_SUBTITLE.wasPressed())
-                BetterSubtitlesClientMod.getInstance().getSubtitleManager().addSubtitle("Lorem ipsum dolor sit amet");
+                BetterSubtitlesClientMod.getInstance().getSubtitleManager().addSubtitle("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         });
     }
 }

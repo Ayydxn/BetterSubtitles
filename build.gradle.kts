@@ -37,9 +37,12 @@ dependencies {
     modImplementation("maven.modrinth:yacl:${rootProject.property("yacl_version")}")
     include("maven.modrinth:yacl:${rootProject.property("yacl_version")}")
 
-    // Needed for YACL or else the game will crash complaining that it can't find classes from here.
+    // Needed for YACL or else, the game will crash complaining that it can't find classes from here.
     runtimeOnly("org.quiltmc.parsers:gson:0.3.1")
     include("org.quiltmc.parsers:gson:0.3.1")
+
+    modImplementation("io.github.0x3c50.renderer:renderer-fabric:${rootProject.property("renderer_version")}")
+    include("io.github.0x3c50.renderer:renderer-fabric:${rootProject.property("renderer_version")}")
 }
 
 tasks {
